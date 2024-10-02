@@ -1,0 +1,26 @@
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.button {
+  background-color: #364386;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #b2c2ea;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    opacity: 0.8;
+  }
+}
