@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from '../App';
 
-test('renders title', () => {
-  render(<App />);
-  const probablyTheHeader = screen.getByText(/super simple app/i);
-  expect(probablyTheHeader).toBeInTheDocument();
+describe('App', () => {
+  it('renders title', () => {
+    render(<App />);
+    const header = screen.getByRole('heading', { name: /welcome to a super simple app!/i });
+
+    expect(header).toBeInTheDocument();
+  });
+
+  // etc...
 });
